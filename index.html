@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><title>Kế hoạch Hành động Khối Đào tạo CNTT (10 Phút)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0}
+body{background:#e9ecf3;font-family:'Segoe UI',Roboto,Arial,sans-serif;color:#1d1d3b;overflow:hidden;height:100vh}
+#st{position:absolute;left:50%;top:calc(50% - 28px);width:1280px;height:720px;background:#fff;box-shadow:0 4px 24px #0002;transform-origin:center}
+.sl{display:none;position:absolute;inset:0;padding:30px 44px;flex-direction:column}
+.sl.on{display:flex}
+.tb{display:flex;align-items:center;gap:14px}
+.tb .b{width:6px;height:38px;background:#d62f2f}
+h1{font-size:28px;font-weight:800;color:#22225e}
+.tb em{margin-left:auto;font-style:normal;font-size:15px;color:#667}
+.ss{font-size:16px;color:#667;margin:6px 0 16px 20px}
+.fl{flex:1;display:grid;align-items:stretch;min-height:0}
+.pn{border:1px solid #dbe2f0;border-radius:16px;background:#f6f8fd;padding:16px 14px;display:flex;flex-direction:column;min-height:0}
+.pn.m{border:2.5px solid #d62f2f;background:#fff}
+.hd{text-align:center;padding-bottom:10px;margin-bottom:12px;border-bottom:1.5px solid #dbe2f0}
+.pl{display:inline-block;font-weight:700;font-size:13px;letter-spacing:1px;border-radius:16px;padding:5px 18px}
+.hd h2{font-size:22px;font-weight:700;color:#22225e;margin-top:8px}
+.hd small{display:block;font-size:15px;color:#667;margin-top:3px}
+.col{flex:1;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.c{background:#fff;border:1px solid #e2e7f3;border-radius:12px;padding:11px 13px}
+.pn.m .c{background:#f8f9fc}
+.c .r{display:flex;align-items:center;gap:10px}
+.ic{width:34px;height:34px;border-radius:9px;background:#eceffa;color:#22225e;display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.c b{font-size:16px;color:#22225e;line-height:1.3}
+.c p{font-size:14px;color:#555d78;line-height:1.4;margin-top:5px}
+.g2{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:10px}
+.g2 .c,.col .c.nn{display:flex;gap:10px;align-items:flex-start}
+.n{width:26px;height:26px;border-radius:50%;background:#d62f2f;color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+.mn{color:#d62f2f;font-weight:700;font-size:13px}
+.ar{display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700}
+.rl{display:flex;gap:10px;margin-top:12px}
+.ch{flex:1;background:#f6f8fd;border:1px solid #dbe2f0;border-radius:10px;padding:8px 10px;font-size:14px;display:flex;gap:8px;align-items:center}
+.ch i{color:#22225e;font-size:20px}
+.ap{margin-top:12px;border:2.5px solid #d62f2f;border-radius:14px;padding:10px 16px;display:flex;gap:18px;align-items:center;font-size:15px;font-weight:600;color:#22225e}
+
+.tp{display:grid;grid-template-columns:150px 1fr 26px 1.55fr 26px 1fr;align-items:stretch}
+.tp.h{padding:0 9px}
+.hc{background:#fff;border:1px solid #dbe2f0;border-radius:12px;padding:8px 12px}
+.hc.m{border:2px solid #d62f2f}
+.hc b{font-size:17px;color:#22225e;margin-left:8px}
+.hc p{font-size:13px;color:#555d78;margin-top:4px}
+.hc .rr{display:flex;flex-wrap:wrap;gap:2px 12px;margin-top:4px;font-size:13px;font-weight:600;color:#22225e}
+.hc .rr span{display:flex;gap:5px;align-items:center}
+.hc .rr i.ti,.hc .rr svg{font-size:16px}
+.sec{font-size:13px;letter-spacing:1.5px;color:#22225e;font-weight:700;margin:8px 0 6px}
+.rs{flex:1;display:flex;flex-direction:column;gap:8px;min-height:0}
+.rw{flex:1;background:#f6f8fd;border:1px solid #dbe2f0;border-radius:12px;padding:6px 8px}
+.lb{display:flex;flex-direction:column;justify-content:center;border-left:4px solid;padding-left:10px;margin-right:8px}
+.lb b{font-size:15px;color:#22225e;line-height:1.25}
+.lb span{font-size:14px;font-weight:700;margin-top:3px}
+.gp{display:flex;align-items:center;gap:2px;border:1.5px dashed;border-radius:12px;padding:5px}
+.g1{border-color:#22225e;background:#f4f5fc}
+.g2{border-color:#d62f2f;background:#fdf4f4}
+.g3{border-color:#39bde3;background:#f0fafe}
+.st{flex:1;align-self:stretch;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e2e7f3;border-radius:8px;padding:5px 4px;min-height:42px;font-size:13px;font-weight:600;color:#22225e;text-align:center;line-height:1.25}
+.cv{color:#99a;font-style:normal;font-size:16px}
+.ar2{display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700}
+.bb{margin-top:10px;background:#eef1fb;border-radius:22px;padding:10px 18px;text-align:center;font-size:15px;font-weight:700;color:#22225e}
+#nv{position:fixed;bottom:0;left:0;right:0;height:56px;display:flex;justify-content:center;align-items:center;gap:16px;background:#22225e;color:#fff;font-size:15px}
+#nv button{background:#ffffff1f;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-size:15px;cursor:pointer}
+#nv button:hover{background:#ffffff40}
+</style></head><body>
+<div id="st"></div>
+<div id="nv"><button onclick="go(i-1)">◀ Trước</button><span id="cnt"></span><button onclick="go(i+1)">Tiếp ▶</button><span>|</span><button onclick="fs()">⛶ Toàn màn hình</button></div>
+<script>
+const NV='#22225e',RD='#d62f2f',CY='#39bde3',PU='#5b5bd0';
+const C=(i,t,d)=>`<div class=c><div class=r><div class=ic><i class="ti ti-${i}"></i></div><b>${t}</b></div><p>${d}</p></div>`;
+const N=(n,t,m,d)=>`<div class="c nn"><div class=n>${n}</div><div><b>${t}</b>${m?`<div class=mn>${m}</div>`:''}<p>${d}</p></div></div>`;
+const P=(cl,bg,pl,t,s,b,fc='#fff')=>`<div class="pn ${cl}"><div class=hd><span class=pl style="background:${bg};color:${fc}">${pl}</span><h2>${t}</h2>${s?`<small>${s}</small>`:''}</div>${b}</div>`;
+const A=c=>`<div class=ar style="color:${c}"><i class="ti ti-arrow-right"></i></div>`;
+const H=(t,s)=>`<div class=tb><i class=b></i><h1>${t}</h1><em>Khối Đào tạo CNTT</em></div><div class=ss>${s}</div>`;
+const F=(c,b)=>`<div class=fl style="grid-template-columns:${c}">${b}</div>`;
+const col=x=>`<div class=col>${x}</div>`;
+const ck='<i class="ti ti-clock"></i> ';
+const IC=i=>`<i class="ti ti-${i}"></i>`;
+const HC=(bg,fc,pl,t,sb,a,b,cl)=>`<div class="hc ${cl}"><span class=pl style="background:${bg};color:${fc}">${pl}</span><b>${t}</b><p>${sb}</p><div class=rr><span>${IC(a[0])} ${a[1]}</span><span>${IC(b[0])} ${b[1]}</span></div></div>`;
+const G=(c,a)=>`<div class="gp ${c}">${a.map(x=>`<span class=st>${x}</span>`).join('<i class=cv>›</i>')}</div>`;
+const R=(c,t,p,a,b,d)=>`<div class="tp rw"><div class=lb style="border-color:${c}"><b>${t}</b><span style="color:${c}">${p}%</span></div>${G('g1',a)}<div class=ar2 style="color:${RD}">→</div>${G('g2',b)}<div class=ar2 style="color:${PU}">→</div>${G('g3',d)}</div>`;
+const S=[
+H('KẾ HOẠCH HÀNH ĐỘNG KHỐI ĐÀO TẠO CNTT','Thí điểm mô hình lớp học ảo liên cơ sở HN – HCM')+
+F('1fr 24px 1fr 24px 1fr',
+P('',NV,'BÀI TOÁN 1','Tổ chức lớp học','Đổi mới cách dạy online',col(C('school','Lớp học ảo liên cơ sở','HN và HCM học chung, chia nhóm theo năng lực.')+C('users','Giảng viên kèm cặp','Từ truyền đạt một chiều sang định hướng và kèm cặp.')))+'<div></div>'+
+P('m',RD,'BÀI TOÁN 2','Năng lực giảng viên','Chuẩn hóa tay nghề',col(C('book','70% nền tảng','Kiến thức gốc, lý thuyết, chuẩn sư phạm.')+C('code','30% thực hành','Làm được dự án thực tế cho doanh nghiệp.')))+'<div></div>'+
+P('',CY,'BÀI TOÁN 3','Dự án thực tế & AI','Học đi đôi với làm',col(C('puzzle','Dự án thật vào bài học','Phần mềm nội bộ do thầy và trò cùng làm.')+C('robot','Trợ lý AI 24/7','Giải đáp và chấm bài tự động ngoài giờ.')),'#08324a')),
+
+H('BÀI TOÁN 1 · CHUYỂN ĐỔI MÔ HÌNH TỔ CHỨC LỚP HỌC','Từng bước chuyển đổi, bắt đầu bằng thí điểm trên 01 môn học')+
+F('1fr 40px 1.7fr 40px 1fr',
+P('',NV,'HIỆN TẠI','Mô hình lớp cũ','',col(C('building','Lớp cố định','Tổ chức riêng biệt tại HN và HCM.')+C('microphone','Truyền đạt một chiều','Giảng viên đứng lớp là chủ yếu.')))+A(RD)+
+P('m',RD,'ĐỊNH HƯỚNG MỚI','Lớp học ảo liên cơ sở','',col(C('adjustments','Học theo trình độ và năng lực','Chia nhóm theo kết quả đánh giá, chuyển nhóm linh hoạt.')+C('puzzle','Học qua dự án và giải quyết vấn đề','Học viên làm việc trên bài toán thực tế.')+C('world','Học tập cộng tác online','Nhóm trộn học viên hai cơ sở, làm việc trên kho code chung.')))+A(PU)+
+P('',CY,'VAI TRÒ MỚI','Giảng viên','',col(C('compass','Định hướng','Dẫn dắt lộ trình học của từng nhóm.')+C('users-group','Kèm cặp','Cùng trợ giảng hỗ trợ người học.')),'#08324a')),
+
+H('MÔ HÌNH VẬN HÀNH: LỚP HỌC ẢO (VIRTUAL CLASS)','Học đảo ngược trên LMS: 3 giai đoạn, 4 loại buổi học (tỷ lệ đề xuất 30 – 20 – 20 – 30)')+
+`<div class="tp h"><div></div>${HC(NV,'#fff','TRƯỚC LỚP','Pre-class','Nhóm chuẩn bị bài trên LMS · 30 phút',['users','Trợ giảng hỗ trợ'],['robot','AI giải đáp, gợi ý'],'')}<div class=ar2 style="color:${RD}">→</div>${HC(RD,'#fff','TẠI LỚP','In-class (HN + HCM)','Kiểm tra đầu giờ → bài toán → demo · 120 phút',['chalkboard','Giảng viên triển khai'],['users','Trợ giảng kèm nhóm 15 HV'],'m')}<div class=ar2 style="color:${PU}">→</div>${HC(CY,'#08324a','SAU LỚP','Post-class','Nhóm làm BTVN trên LMS · 60 phút',['users','Trợ giảng chấm, hỗ trợ'],['robot','AI chấm sơ bộ, góp ý code'],'')}</div>`+
+'<div class=sec>BỐN LOẠI BUỔI HỌC</div><div class=rs>'+
+R('#2f6fe0','Lý thuyết tương tác',30,['Video bài giảng','Bài đọc + câu hỏi','Quiz'],['Kiểm tra đầu giờ','Giới thiệu bài toán','Hệ thống kiến thức','Q&amp;A'],['Bài tập về nhà'])+
+R('#1aa37a','Thực hành cơ bản',20,['Làm trước bài thực hành trên LMS'],['Kiểm tra đầu giờ','Rèn kỹ năng, công cụ','Chữa bài'],['Bài tập về nhà'])+
+R('#e8a317','Thực hành tích hợp',20,['Đọc trước đề bài toán thật'],['Kiểm tra đầu giờ','Kết hợp nhiều kiến thức','Hệ thống giải pháp','Demo'],['Hoàn thiện bài'])+
+R('#d62f2f','Project thực tế',30,['Làm trước theo SRS trên LMS'],['Kiểm tra tiến độ','Phân tích, thiết kế','Code review','Demo'],['Làm việc nhóm','Hoàn thiện project'])+
+'</div><div class=bb>Học viên đến lớp đã chuẩn bị → giờ trên lớp dành cho giải quyết bài toán và kèm cặp theo nhóm, không giảng lại từ đầu</div>',
+
+H('BÀI TOÁN 2 · NĂNG LỰC GIẢNG VIÊN (70% + 30%)','Mọi giảng viên có nền tảng chuyên môn vững và làm được dự án thực tế')+
+F('1fr 44px 1fr 44px 1.4fr',
+P('',NV,'70%','Nền tảng chuyên môn','',col(C('book','Kiến thức gốc','Hiểu sâu lý thuyết.')+C('school','Chuẩn sư phạm','Truyền đạt và kèm cặp hiệu quả.')))+
+`<div class=ar style="color:${NV};font-size:42px">+</div>`+
+P('',CY,'30%','Năng lực thực hành','',col(C('code','Viết code thực tế','Giải quyết bài toán của doanh nghiệp.')+C('puzzle','Dẫn dắt dự án','Làm trưởng nhóm dự án cùng học viên.')),'#08324a')+A(RD)+
+P('m',RD,'YÊU CẦU','100% giảng viên làm được dự án thực tế','',col(C('search','Tìm hiểu nghiệp vụ 8 ngành nghề','Thực hiện trong giai đoạn chuẩn bị (12/2026 – 01/2027).')+C('chart-bar','Đánh giá theo mức độ kèm cặp','Thù lao gắn với tỷ lệ học viên làm được việc, áp dụng sau thí điểm.')))),
+
+H('BÀI TOÁN 3 · DỰ ÁN THỰC TẾ & TRỢ LÝ AI','Học đi đôi với làm, có AI hỗ trợ học viên ngoài giờ')+
+F('1.4fr 44px 1fr',
+P('m',RD,'QUY TRÌNH','Đưa dự án thật vào học','',col(N(1,'Công ty giao dự án','','1–2 phần mềm nội bộ giao cho Khối Đào tạo.')+N(2,'Thầy trò cùng làm','','Giảng viên làm trưởng nhóm; học viên giỏi và trợ giảng cùng viết code.')+N(3,'Đóng gói bài tập','','Thành ngân hàng bài tập thực tế cho các khóa sau.')))+A(PU)+
+P('',CY,'TRỢ LÝ AI','Hỗ trợ 24/7','',col(C('message-circle','Hỏi đáp ngoài giờ','Chỉ ra lỗi code và cách sửa khi trợ giảng đã nghỉ.')+C('checklist','Chấm bài tự động','Nhận xét ngay sau khi nộp, không chờ chấm tay.')+C('layout-dashboard','Tích hợp LMS','Chạy trên nền tảng LMS hiện có.')),'#08324a'))
+];
+const st=document.getElementById('st'),cnt=document.getElementById('cnt');
+st.innerHTML=S.map(x=>`<section class=sl>${x}</section>`).join('');
+let i=0;
+function go(n){i=Math.max(0,Math.min(S.length-1,n));document.querySelectorAll('.sl').forEach((e,k)=>e.classList.toggle('on',k==i));cnt.textContent=(i+1)+' / '+S.length}
+function fit(){st.style.transform='translate(-50%,-50%) scale('+Math.min(innerWidth/1280,(innerHeight-56)/720)+')'}
+function fs(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}
+addEventListener('resize',fit);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key))go(i+1);if(['ArrowLeft','PageUp'].includes(e.key))go(i-1)});
+fit();go(0);
+</script></body></html>
